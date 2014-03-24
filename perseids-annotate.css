@@ -42,7 +42,7 @@ body {
   float: left;  
   width: 48%;
   padding: .25em;
-  border: 1.5px solid black;
+  border: 2px solid black;
 }
 #annotation_motivation_input {
   margin: .25em;
@@ -114,9 +114,56 @@ select[name='group_urn'], select[name='work_urn'], select[name='version_urn']   
     color: black;
 }
 
-.cts_selector_hint, .cite_selector_hint {
+.cts_selector_hint, .cite_selector_hint, .uri_selector_hint {
 	font-size: smaller;
 	font-style: italic;
 	color: #4183C4;
 	cursor: pointer;
+}
+
+#person_uri_search{
+    background-color:#c3dfef;
+}
+#person_uri_newsearch{
+    float:right;
+    padding:20px;
+}
+.person_textinput{
+    margin: 0;
+    padding: 5px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:14px;
+    border:1px solid #0076a3; border-right:0px;
+    border-top-left-radius: 5px 5px;
+    border-bottom-left-radius: 5px 5px;
+}
+.uributton {
+    margin: 0;
+    padding: 5px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:14px;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    border: solid 1px #0076a3; border-right:0px;
+    background: #0095cd;
+    background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+    background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+    border-top-right-radius: 5px 5px;
+    border-bottom-right-radius: 5px 5px;
+}
+.uributton:hover {
+    text-decoration: none;
+    background: #007ead;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+    background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+}
+/* Fixes submit button height problem in Firefox */
+.uributton::-moz-focus-inner {
+    border: 0;
+}
+.uriclear{
+    clear:both;
 }
