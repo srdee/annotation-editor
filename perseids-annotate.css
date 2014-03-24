@@ -121,14 +121,14 @@ select[name='group_urn'], select[name='work_urn'], select[name='version_urn']   
 	cursor: pointer;
 }
 
-#person_uri_search{
+#person_uri_search, #place_uri_search, #artifact_uri_search{
     background-color:#c3dfef;
 }
-#person_uri_newsearch{
+#person_uri_newsearch, #place_uri_newsearch, #artifact_uri_newsearch{
     float:right;
     padding:20px;
 }
-.person_textinput{
+.person_textinput, .place_textinput, .artifact_textinput{
     margin: 0;
     padding: 5px 15px;
     font-family: Arial, Helvetica, sans-serif;

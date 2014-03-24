@@ -201,13 +201,23 @@
             <p class="uri_selector_hint"> Click to search for Named Entity URIs</p>
             <div id="uri_search_container" style="display:none;">
                 <div id="person_uri_search">
-                    <form id="person_uri_newsearch" method="get" action="http://www.google.com">
+                    <form id="person_uri_newsearch" method="get" action="https://en.wikipedia.org">
                         <input type="text" class="person_textinput" name="q" size="21" maxlength="120"></input><input type="submit" value="search" class="uributton"></input>
                     </form>
                     <div class="uriclear"></div>
                 </div>
-                <div id="place_uri_search"></div>
-                <select id="artifact_uri_search"></select>
+                <div id="place_uri_search">
+                    <form id="place_uri_newsearch" method="get" action="http://pleiades.stoa.org/search">
+                        <input type="text" class="place_textinput" name="q" size="21" maxlength="120"></input><input type="submit" value="search" class="uributton"></input>
+                    </form>
+                    <div class="uriclear"></div>
+                </div>
+                <div id="artifact_uri_search">
+                    <form id="artifact_uri_newsearch" method="get" action="http://www.google.com">
+                        <input type="text" class="artifact_textinput" name="q" size="21" maxlength="120"></input><input type="submit" value="search" class="uributton"></input>
+                    </form>
+                    <div class="uriclear"></div>
+                </div>
             </div>
         </div>
     </div>
